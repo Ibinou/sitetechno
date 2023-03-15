@@ -1,78 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Mon rectangle</title>
-	<style type="text/css">
-		.container {
-		  position: relative;
-		  width: 100%;
-		  height: 400px;
-		  overflow: hidden;
-		}
-		
-		.background-img {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  object-fit: cover;
-		  z-index: -1;
-		}
-		
-		.blur-box {
-		  position: absolute;
-		  bottom: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 60px;
-		  background: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-		  filter: blur(20px);
-		}
-		
-		.content {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  text-align: center;
-		  color: white;
-		  z-index: 1;
-		  font-family: Helvetica, sans-serif;
-		}
-		
-		h2 {
-		  font-size: 36px;
-		  margin-bottom: 20px;
-		}
-		
-		p {
-		  font-size: 18px;
-		}
-		
-		.triangle {
-		  position: absolute;
-		  bottom: -10px;
-		  left: 50%;
-		  transform: translateX(-50%);
-		  width: 0;
-		  height: 0;
-		  border-left: 20px solid transparent;
-		  border-right: 20px solid transparent;
-		  border-top: 20px solid white;
-		  z-index: 1;
-		}
-	</style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rectangle avec arrière-plan flou et titre superposé sur une image</title>
+   <style>
+      .container {
+         position: relative;
+         width: 100%;
+      }
+
+      .container img {
+         width: 100%;
+         height: auto;
+      }
+
+      .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0,0,0,0.5);
+      }
+
+      .rectangle {
+         width: 500px;
+         height: 300px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: white;
+         filter: blur(5px);
+      }
+
+      .rectangle h1 {
+         text-align: center;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: black;
+         font-size: 32px;
+      }
+   </style>
 </head>
 <body>
-	<div class="container">
-	  <img src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/shutterstock_644724364-1-scaled.jpg" alt="Image de fond" class="background-img">
-	  <div class="blur-box"></div>
-	  <div class="content">
-	    <h2>Titre du rectangle</h2>
-	    <p>Contenu du rectangle</p>
-	  </div>
-	  <div class="triangle"></div>
-	</div>
+   <div class="container">
+      <img src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/shutterstock_644724364-1-scaled.jpg" alt="Image de fond">
+      <div class="overlay">
+         <div class="rectangle">
+            <h1>Titre centré</h1>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
