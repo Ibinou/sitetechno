@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Exemple de rectangle flou d'arrière-plan centré au milieu d'une image</title>
-	<style>
-		.container {
-		  position: relative;
-		  display: inline-block;
-		}
-		
-		.container img {
-		  display: block;
-		  max-width: 100%;
-		  height: auto;
-		}
-		
-		.overlay {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  width: calc(100% - 60px);
-		  height: calc(100% - 60px);
-		  backdrop-filter: blur(20px);
-		  z-index: 1;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-	  <img src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/shutterstock_644724364-1-scaled.jpg" alt="Votre image">
-	  <div class="overlay"></div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Titre de la page</title>
+    <style>
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .title-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="https://media.istockphoto.com/id/1184804468/fr/photo/concept-de-technologie-industrielle-automatisation-dusine-usine-intelligente-industrie-4-0.jpg?s=1024x1024&w=is&k=20&c=nWuiXYYRk2nVFiRepRaedkJjVyCX3u6eDBLH56Xk7YE=&p=1" alt="Description de l'image">
+      <div class="title-container">
+        <h2>Votre titre</h2>
+      </div>
+    </div>
+  </body>
 </html>
