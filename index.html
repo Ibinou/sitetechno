@@ -4,50 +4,65 @@
 	<title>Mon rectangle</title>
 	<style type="text/css">
 		.container {
-			position: relative;
-			width: 100%;
-			height: 400px;
-			overflow: hidden;
+		  position: relative;
+		  width: 100%;
+		  height: 400px;
+		  overflow: hidden;
+		  border-radius: 20px;
 		}
 		
-		.blur-bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: url('https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/shutterstock_644724364-1-scaled.jpg') center center no-repeat;
-			background-size: cover;
-			filter: blur(5px);
+		.background-img {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		  z-index: -1;
+		  border-radius: 20px;
+		}
+		
+		.blur-box {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  width: 80%;
+		  height: 70%;
+		  background-color: rgba(255, 255, 255, 0.5);
+		  filter: blur(10px);
+		  border-radius: 20px;
 		}
 		
 		.content {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			text-align: center;
-			color: white;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  color: white;
+		  z-index: 1;
+		  font-family: Helvetica, sans-serif;
 		}
 		
 		h2 {
-			font-size: 36px;
-			margin-bottom: 20px;
+		  font-size: 36px;
+		  margin-bottom: 20px;
 		}
 		
 		p {
-			font-size: 18px;
+		  font-size: 18px;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="blur-bg"></div>
-		<div class="content">
-			<h2>Titre du rectangle</h2>
-			<p>Contenu du rectangle</p>
-		</div>
+	  <img src="lien-de-l-image.jpg" alt="Image de fond" class="background-img">
+	  <div class="blur-box"></div>
+	  <div class="content">
+	    <h2>Titre du rectangle</h2>
+	    <p>Contenu du rectangle</p>
+	  </div>
 	</div>
 </body>
 </html>
-
