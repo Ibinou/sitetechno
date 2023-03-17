@@ -18,6 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .rectangle-title {
@@ -25,4 +27,5 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
+  font-family: Helvetica, sans-serif;
 }
