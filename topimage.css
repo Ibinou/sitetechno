@@ -20,6 +20,7 @@
   justify-content: center;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  border-radius: 15px;
 }
 
 .rectangle-title {
