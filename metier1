@@ -7,56 +7,47 @@
     <link rel="stylesheet" href="topimage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <title>Site Techno Robots</title>
+    <title>Métier1</title>
   </head>
-  <body>
-    <div class="header-image">
-  <div class="rectangle">
-    <h2 class="rectangle-title">Les robots dans la médecine</h2>
-  </div>
-</div>
-    </div>
-    <br>
-    <br>
-<div class="card">
-  <h2 class="card-title">Le milieu de la chirurgie</h2>
-  <p class="card-content">Comment les robots peuvent ils contribuer dans le milieu chirurgical ?</p>
-  <button class="card-button"><a href="metier1.html">Voir</a></button>
-</div>
-  
-  <br>
-  <br>
-  
-<div class="card">
-  <h2 class="card-title">Le milieu de l´aide à la personne</h2>
-  <p class="card-content">Comment les robots peuvent ils aider des gens ?</p>
-  <button class="card-button"><a href="metier2.html">Voir</a></button>
-</div>
-	
-  <br>
-  <br>
-  
-<div class="card">
-  <h2 class="card-title">Le milieu de la kinésiologie</h2>
-  <p class="card-content">Comment les robots peuvent ils aider les kinés ?</p>
-  <button class="card-button"><a href="metier3.html">Voir</a></button>
-</div>
-  
-  <br>
-  <br>
-  <hr class="style-one">
-	
-  <style>
-  .image-infos{
-	         		width: 110px;
-		        	height: 110px;
-  </style>
-<center>
-<img src="img/infos.jpeg" class="image-infos">
-</center>
-
-<center>
-<h1 style="font-family:helvetica;font-size:28px;color:black;">Informations</h1> 
-	
-  </body>
-</html>
+    <body>
+	<header>
+		<h1>Comment apprendre à coder en HTML et CSS</h1>
+		<nav>
+			<ul>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#bases">Les bases</a></li>
+				<li><a href="#projets">Des projets pour s'entraîner</a></li>
+				<li><a href="#ressources">Des ressources pour aller plus loin</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article id="introduction">
+			<h2>Introduction</h2>
+			<p>Coder en HTML et CSS est aujourd'hui une compétence de base pour tout développeur web. Ces deux langages permettent de créer des pages web, de les styliser, de leur donner vie en y ajoutant des images, des vidéos, des animations...</p>
+			<p>Si vous souhaitez apprendre à coder en HTML et CSS, vous êtes au bon endroit ! Dans cet article, nous allons vous donner toutes les clés pour commencer à créer vos propres pages web.</p>
+		</article>
+		<article id="bases">
+			<h2>Les bases</h2>
+			<p>Avant de vous lancer dans la création de votre première page web, il est important de comprendre les bases du HTML et du CSS.</p>
+			<h3>HTML</h3>
+			<p>HTML (HyperText Markup Language) est le langage qui permet de structurer une page web. Il est composé de balises (ou tags) qui permettent de définir les différents éléments de la page : titres, paragraphes, images, liens...</p>
+			<h3>CSS</h3>
+			<p>CSS (Cascading Style Sheets) est le langage qui permet de donner du style à une page web. Il permet de définir la couleur, la taille, la police de caractères, la mise en page...</p>
+		</article>
+		<article id="projets">
+			<h2>Des projets pour s'entraîner</h2>
+			<p>La meilleure façon d'apprendre à coder en HTML et CSS est de pratiquer ! Voici quelques idées de projets pour vous entraîner :</p>
+			<ul>
+				<li>Créer une page de présentation personnelle</li>
+				<li>Créer une page de blog</li>
+				<li>Créer une page de vente pour un produit fictif</li>
+				<li>Créer une page de portfolio pour présenter vos projets</li>
+			</ul>
+			<p>N'hésitez pas à chercher de l'inspiration sur des sites comme CodePen ou Dribbble, et à vous lancer dans des projets plus ambitieux au fil de votre progression.</p>
+		</article>
+		<article id="ressources">
+			<h2>Des ressources pour aller plus loin</h2>
+			<p>Pour aller plus loin dans l'apprentissage du HTML et du CSS, voici quelques ressources à consulter :</p>
+			<ul>
+				<li><a href="https://www.w3
