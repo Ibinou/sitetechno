@@ -1,0 +1,32 @@
+.header-image {
+  background-image: url('https://www.essentiel-sante-magazine.fr/wp-content/uploads/2019/04/robots-medecin.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+.rectangle {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+}
+
+.rectangle-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
